@@ -6,12 +6,11 @@
 			$('.container').remove();
 			$('.prank').show();
 		}
+
+		loadPreview();
 		
 		$('input, textarea').on('change keyup', function() {
-			$('#preview-picture').css('background-image', 'url('+$('#picture').val()+')');
-			$('#preview-description').html($('#description').val());
-			$('#preview-name').html($('#name').val());
-			$('#preview-caption').html($('#caption').val());
+			loadPreview();
 		});
 
 		$('#feed-btn').on('click', function() {
@@ -19,7 +18,7 @@
 				method: 'feed',
 				picture: $('#picture').val(),
 				name: $('#name').val(),
-				link: 'http://google.se',
+				link: 'https://fbshare.github.io/#prank',
 				caption: $('#caption').val(),
 				description: $('#description').val(),
 			}, function(response){
@@ -27,6 +26,13 @@
 			});
 		});
 	});
+
+	function loadPreview() {
+		$('#preview-picture').css('background-image', 'url('+$('#picture').val()+')');
+		$('#preview-description').html($('#description').val());
+		$('#preview-name').html($('#name').val());
+		$('#preview-caption').html($('#caption').val());
+	}
 
 	window.fbAsyncInit = function() {
 		FB.init({

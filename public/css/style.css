@@ -1,0 +1,188 @@
+* {
+	font-family: helvetica;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	line-height: 1.5em;
+	-webkit-appearance: none;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	background: #e9eaed;
+	color: #141823;
+}
+
+input, textarea {
+	display: block;
+	margin: 5px 0px 10px 0px;
+	width: 100%;
+	max-width: 500px;
+	padding: 5px;
+	border: 1px solid rgb(200,200,200);
+	outline: none;
+}
+
+input:focus {
+	border: 1px solid #5972a7;
+}
+
+label i {
+	font-size: 12px;
+	display: block;
+}
+
+ul, ol {
+	margin: 0;
+	padding: 0;
+	padding-left: 15px;
+}
+
+.info-alert {
+	position: relative;
+	background-color: #fff;
+	border: 1px solid #5890ff;
+	-webkit-border-radius: 3px;
+	overflow: hidden;
+	padding: 0 0 0 50px;
+	font-size: 14px;
+	margin: 10px 0;
+}
+
+.info-alert:before {
+	content: url('../imgs/info.png');
+	background: #5890ff;
+	width: 30px;
+	padding: 10px 0 10px 10px;
+	height:100%;
+	position: absolute;
+	left: 0;
+}
+
+.info-alert .alert-msg {
+	padding: 10px 10px 10px 0;
+}
+
+.info {
+	border-left: 3px solid #5972a7;
+	padding: 10px 20px;
+	color: rgb(100,100,100);
+	margin: 20px 0;
+}
+
+.container {
+	max-width: 980px;
+	width: 100%;
+	margin: auto;
+	padding: 10px;
+}
+
+.block {
+	background: #fff;
+	padding: 20px;
+	border: 1px solid rgb(220,220,220);
+	border-radius: 3px;
+}
+
+#fb-preview {
+	-webkit-box-shadow: 0 0 0 .5px rgba(0, 0, 0, .15) inset, 0 1px 4px rgba(0, 0, 0, .1);
+	box-shadow: 0 0 0 .5px rgba(0, 0, 0, .15) inset, 0 1px 4px rgba(0, 0, 0, .1);
+	border: 1px solid;
+	border-color: #e9eaed #e9eaed #d1d1d1;
+	width: 444px;
+	height: 362px;
+	overflow: hidden;
+	margin: 10px 0 20px 0;
+	background-color: #fff;
+}
+
+#fb-preview #preview-picture {
+	background: no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 253px;
+	width: 100%;
+	border: 1px solid black;
+}
+
+#description-content {
+	padding: 10px;
+}
+
+#description-content #preview-name {
+	font-family: Georgia, 'lucida grande',tahoma,verdana,arial,sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 22px;
+	margin-bottom: 5px;
+	max-height: 110px;
+	overflow: hidden;
+	word-wrap: break-word;
+}
+
+#description-content #preview-description {
+	font-size: 12px;
+}
+
+#description-content #preview-caption {
+	font-size: 11px;
+	line-height: 11px;
+	text-transform: uppercase;
+	color: #9197a3;
+	margin-top: 5px;
+}
+
+#description-content #text-content {
+	height: 66px;
+	margin-bottom: 12px;
+	overflow: hidden;
+}
+
+.fb-button {
+	line-height: 1em;
+	-moz-box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+	box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #637aad), color-stop(1, #5972a7));
+	background:-moz-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:-webkit-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:-o-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:-ms-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:linear-gradient(to bottom, #637aad 5%, #5972a7 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#637aad', endColorstr='#5972a7',GradientType=0);
+	background-color:#637aad;
+	border:1px solid #314179;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 12px;
+	text-decoration:none;
+}
+.fb-button:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5972a7), color-stop(1, #637aad));
+	background:-moz-linear-gradient(top, #5972a7 5%, #637aad 100%);
+	background:-webkit-linear-gradient(top, #5972a7 5%, #637aad 100%);
+	background:-o-linear-gradient(top, #5972a7 5%, #637aad 100%);
+	background:-ms-linear-gradient(top, #5972a7 5%, #637aad 100%);
+	background:linear-gradient(to bottom, #5972a7 5%, #637aad 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5972a7', endColorstr='#637aad',GradientType=0);
+	background-color:#5972a7;
+}
+.fb-button:active {
+	position:relative;
+	top:1px;
+}
+
+.prank {
+	padding: 30px 0;
+}
+
+.prank img {
+	max-width: 90%;
+}
